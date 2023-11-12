@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vowel counter</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <h1 class "heading">Lavde ka counter</h1>
+    <input id="vowel-input" type="text">
+    <!--<button id="submit-button">submit</button>-->
+    <p>
+        Number of vowels: <span id="output-el">0</span>
+    </p>
+
+
+</body>
+<script>
+    
+    const vowelinput= document.getElementById("vowel-input")
+    //const submitbutton=document.getElementById("submit-button")
+    const outputelement=document.getElementById("output-el")
+    
+    vowelinput.addEventListener("input",()=>
+     {
+        const input= vowelinput.value 
+        let count=0
+        for(char of input){
+            const vowels=["a","e","i","o","u"]
+            if(vowels.includes(char)){
+
+               count+=1
+            }
+            console.log(char) //prints character
+            outputelement.textContent= count
+        console.log(input)}
+        console.log(count)
+        }
+    )
+
+
+
+</script>
+</html>

@@ -1,0 +1,61 @@
+body {
+    font-family: 'Inter', sans-serif;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(249,241,241);
+    color: rgb(92, 64, 51);
+    overflow-y: hidden;
+}
+
+.heading {
+    font-weight: larger;
+    font-size: large;
+}
+
+#vowel-input {
+    background-color: rgb(196, 164, 132)	;
+    height: 30px;
+    width: 200px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 2px solid rgb(194, 178, 128)
+
+    /*outline: none;/*
+    /*color: whitesmoke;
+    padding: 6px 12px;
+    font-size: medium;/*
+    /* padding: 4px this applies to all, top, bottom, left, and right*/
+    /* padding: 4px, 6px this applies to 4px padding to top and botoom and 6px to left and right*/
+    /* padding: 4px, 5px, 6px, 7px this applies 4 to top, 5 to right, 6 to bottom, and 7 to left  */
+}
+
+#vowel-input:focus {
+    border: 2px dashed;
+    border-color: rgb(0, 0, 0);
+    font: larger
+}
+
+/* #submit-btn {
+    background-color: rgb(52, 51, 51);
+    height: 30px;
+    width: 100px;
+    border-radius: 5px;
+    outline: none;
+    border: 1.5px solid rgb(255, 0, 255);
+    color: whitesmoke;
+    font-size: medium;
+    font: inherit;
+} */
+
+/* #submit-btn:hover {
+    border: 2px dashed rgb(255, 0, 255);
+    cursor: pointer;
+} */
+
+#output-el {
+    color: rgb(88, 24, 69);
+    font-size: large;
+}
